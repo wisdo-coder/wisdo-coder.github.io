@@ -69,6 +69,37 @@
 
     <main>
         <section class="blog-post">
+            <h1>Watch Your Loveworld Specials</h1>
+            <div id="youtube-embed"></div>
+
+            <script>
+                // Replace with the YouTube video ID of the live stream
+                var videoId = "QH8zKrHS6Do";
+            
+                var player;
+                function onYouTubeIframeAPIReady() {
+                  player = new YT.Player("youtube-embed", {
+                    height: "450",
+                    width: "800",
+                    videoId: videoId,
+                    playerVars: {
+                      autoplay: 1,
+                    },
+                    events: {
+                      onReady: onPlayerReady,
+                    },
+                  });
+                }
+            
+                function onPlayerReady(event) {
+                  event.target.playVideo();
+                }
+              </script>
+              <script src="https://www.youtube.com/iframe_api"></script>
+             
+        </section>
+       
+        <section class="blog-post">
             <h2>Release of WAEC Results</h2>
 	    <body><h4>The West African Examination Council (WAEC) just released it's results for the year 2022/2023 Session. </h4></body>
             <p>Posted by <span class="author">Uche-Awa Wisdom</span> on <span class="date">August 9th, 2023</span></p>
