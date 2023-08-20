@@ -68,36 +68,6 @@
 </script>
 
     <main>
-        <section class="blog-post">
-            <h1>Watch Your Loveworld Specials</h1>
-            <div id="youtube-embed"></div>
-
-            <script>
-                // Replace with the YouTube video ID of the live stream
-                var videoId = "PlJ8xBv1cK8";
-            
-                var player;
-                function onYouTubeIframeAPIReady() {
-                  player = new YT.Player("youtube-embed", {
-                    height: "450",
-                    width: "800",
-                    videoId: videoId,
-                    playerVars: {
-                      autoplay: 1,
-                    },
-                    events: {
-                      onReady: onPlayerReady,
-                    },
-                  });
-                }
-            
-                function onPlayerReady(event) {
-                  event.target.playVideo();
-                }
-              </script>
-              <script src="https://www.youtube.com/iframe_api"></script>
-             
-        </section>
        
         <section class="blog-post">
            <h2>News</h2>
